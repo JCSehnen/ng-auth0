@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="text-center mb-4">Login</h2>
+  <form  >
+    <div class="form-group" [formGroup]="loginForm">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" formControlName="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" formControlName="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Login</button>
+  </form>
+  <div class="text-center mt-4">
+    <p>Ou faça login usando:</p>
+    <button class="btn btn-secondary btn-sm mr-2" (click)="loginWithFacebook()">Facebook</button>
+    <button class="btn btn-secondary btn-sm" (click)="loginWithGoogle()">Google</button>
+  </div>
+</div>
