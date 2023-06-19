@@ -5,7 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthModule } from './auth/auth.module';
+
 import { LoginComponent } from './components/views/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +18,7 @@ import { LoginComponent } from './components/views/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule,
     ReactiveFormsModule
   ],
   providers: [],
