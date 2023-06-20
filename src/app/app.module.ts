@@ -13,13 +13,13 @@ import { LoginComponent } from './components/views/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     AuthModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
